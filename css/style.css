@@ -1,0 +1,338 @@
+/* 폰트 선언부
+ 순서대로 : 페이퍼로지, 강원교육모두, 프리텐다드 */
+@font-face {
+    font-family: 'Paperlogy-8ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Pretendard 가변 모듈 폰트 */
+@font-face {
+    font-family: 'Pretendard Variable';
+    src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/PretendardVariable.woff2') format('woff2');
+    font-weight: 100 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font-tntn {
+    font-family: 'Paperlogy-8ExtraBold', sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.font-modu {
+    font-family: 'GangwonEdu_OTFBoldA', sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.font-pretendard-Extrabold {
+    font-family: 'Pretendard Variable', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.font-pretendard-Bold {
+    font-family: 'Pretendard Variable', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.font-pretendard-Regular {
+    font-family: 'Pretendard Variable', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.font-pretendard-Light {
+    font-family: 'Pretendard Variable', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-y: auto;
+    /* 기본 스크롤 허용 */
+}
+
+/* 화면이 충분히 크고, 클래스가 존재할 경우에만 스크롤 제거 */
+@media (min-height: 1080px) {
+    body.no-scroll-if-short {
+        overflow: hidden;
+    }
+}
+
+
+
+body {
+    font-family: 'Pretendard Variable', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-family: 'Pretendard Variable', sans-serif;
+    font-weight: 800;
+}
+
+h2,
+h3,
+h4 {
+    font-family: 'Pretendard Variable', sans-serif;
+    font-weight: 700;
+}
+
+
+/* 네비게이션 영역 */
+.nav-link:hover,
+.nav-link.active {
+    color: #ff7e7e !important;
+}
+
+
+/* 헤더 영역 */
+header {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(../images/main-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+
+/* 서비스 섹션 */
+.card-hover:hover {
+    background-color: #ffc10726;
+}
+
+
+/* SNS 영역 */
+#sns-links {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(../images/sns-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* 뉴스 섹션 */
+#news {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../images/news-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.chat-bubble-left {
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    padding: 12px 16px;
+    text-align: left !important;
+    max-width: 70%;
+}
+
+.chat-bubble-right {
+    background-color: #ffe082;
+    border-radius: 20px;
+    padding: 12px 16px;
+    max-width: 70%;
+}
+
+.btn-group>.btn {
+    border-radius: 0;
+    /* 그룹 내 버튼 사이 둥글기 제거 */
+}
+
+.btn-group>.btn:first-child {
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+}
+
+.btn-group>.btn:last-child {
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+}
+
+/* chatbox 관련 구현부 */
+#chat-box {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    height: 400px;
+    overflow-y: auto;
+}
+
+/* 
+화자가 이어말할 경우에는 bottom 여백을 10, 화자가 바뀔 경우에는 15로 설정하도록 구현하기 */
+.chat-lockstar,
+.chat-a,
+.chat-b {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.chat-lockstar {
+    flex-direction: row;
+}
+
+.chat-a,
+.chat-b {
+    flex-direction: row-reverse;
+    text-align: left;
+}
+
+.chat-bubble {
+    position: relative;
+    padding: 12px 16px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-break: break-word;
+}
+
+.chat-lockstar .chat-bubble {
+    background-color: #f1f3f5;
+    margin-left: 10px;
+}
+
+.chat-a .chat-bubble {
+    background-color: #fac2c3;
+    color: #000;
+    margin-right: 10px;
+}
+
+.chat-b .chat-bubble {
+    background-color: #bee3f8;
+    color: #000;
+    margin-right: 10px;
+}
+
+/* 기존 화살표 */
+.chat-lockstar .chat-bubble::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 10px solid #f1f3f5;
+}
+
+.chat-a .chat-bubble::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 10px solid #fac2c3;
+}
+
+.chat-b .chat-bubble::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 10px solid #bee3f8;
+}
+
+/* 꼬리 숨김용 클래스 */
+.chat-bubble.no-arrow::before {
+    display: none !important;
+}
+
+.profile-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* 아바타 이미지 클래스 */
+.lockstar {
+    background-image: url('../images/Lockstar.png');
+}
+
+.a_static {
+    background-image: url('../images/A_static.png');
+}
+
+.a_running {
+    background-image: url('../images/A_running.png');
+}
+
+.a_angry {
+    background-image: url('../images/A_backpacking.png');
+}
+
+.b_static {
+    background-image: url('../images/B_static.png');
+}
+
+.b_running {
+    background-image: url('../images/B_running.png');
+}
+
+.b_angry {
+    background-image: url('../images/B_backpacking.png');
+}
+
+/* 공통: 기본 흰 배경 유지 */
+.tab-btn {
+    background-color: white;
+    color: #000000;
+    /* Bootstrap 기본 파랑색 */
+    border-color: #ced4da;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 각 버튼의 Hover 및 Active 상태 */
+.tab-1:hover,
+.tab-1.active {
+    background-color: #FFF6D3;
+    color: black;
+}
+
+.tab-2:hover,
+.tab-2.active {
+    background-color: #BEE3F8;
+    color: black;
+}
+
+.tab-3:hover,
+.tab-3.active {
+    background-color: #FAC2C3;
+    color: black;
+}
+
+.tab-4:hover,
+.tab-4.active {
+    background-color: #9E8A7D;
+    color: white;
+}
+
+.tab-5:hover,
+.tab-5.active {
+    background-color: #FFDC83;
+    color: black;
+}
