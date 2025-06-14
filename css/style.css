@@ -201,22 +201,25 @@ header {
     word-break: break-word;
 }
 
+/* Lockstar: 왼쪽 화살표 → 왼쪽 마진 추가 */
 .chat-lockstar .chat-bubble {
     background-color: #f1f3f5;
-    margin-left: 10px;
+    margin-left: 20px; /* 기존 10px → 20px */
 }
 
+/* A, B: 오른쪽 화살표 → 오른쪽 마진 추가 */
 .chat-a .chat-bubble {
     background-color: #fac2c3;
     color: #000;
-    margin-right: 10px;
+    margin-right: 20px; /* 기존 10px → 20px */
 }
 
 .chat-b .chat-bubble {
     background-color: #bee3f8;
     color: #000;
-    margin-right: 10px;
+    margin-right: 20px; /* 기존 10px → 20px */
 }
+
 
 /* 기존 화살표 */
 .chat-lockstar .chat-bubble::before {
