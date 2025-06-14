@@ -105,10 +105,8 @@ Bootstrap 기반 UI와 JavaScript를 활용해 몰입감 있는 학습을 제공
 
 ## 📷 예시 화면
 
-> 준비된 화면 캡처 이미지를 여기에 삽입하세요 (예: `/screenshots/chat-example.png`)
-
----
-
-## 📄 라이선스
-
-본 프로젝트는 교육 목적의 오픈소스로 자유롭게 활용 가능합니다.
+<p align="center">
+  <img src="/example/index_img.png" alt="메인 화면" width="30%" style="margin-right: 10px;">
+  <img src="/example/about_img.png" alt="소개 화면" width="30%" style="margin-right: 10px;">
+  <img src="/example/cardnews_img.png" alt="카드뉴스 화면" width="30%">
+</p>
