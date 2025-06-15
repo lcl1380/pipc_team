@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ko">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>캐릭터 소개</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #fffdf6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .character-card {
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+            transition: transform 0.3s ease;
+        }
+
+        .character-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .character-img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .character-name {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .character-desc {
+            font-size: 1rem;
+            color: #555;
+        }
+    </style>
+</head>
+
+
+<body data-bs-spy="scroll" data-bs-target="#nav-menu" style="padding-top: 70px;">
+
+
+    <!-- 네비게이션 영역 시작 -->
+    <nav class="navbar navbar-expand-md bg-white navbar-white fixed-top">
+        <div class="container">
+
+            <a class="font-tntn navbar-brand" href="index.html">
+                <img src="images/logo.png" style="width: 10%;" alt=" 로고"> 개인정보보호 탐험대
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+                aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav ms-auto my-2">
+                    <li class="font-modu nav-item"><a class="nav-link" href="index.html">홈</a></li>
+                    <li class="font-modu nav-item"><a class="nav-link" href="about.html">제작자
+                            소개</a></li>
+                    <li class="font-modu nav-item"><a class="nav-link" href="about_character.html"
+                            style="color: #9e8a7d;">캐릭터 소개</a></li>
+                    <li class="font-modu nav-item"><a class="nav-link" href="cardnews.html">개인정보보호위원회</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 네비게이션 영역 끝 -->
+
+    <section class="container py-5" id="about-character">
+        <div class="text-center mb-5">
+            <h2 class="font-tntn fw-bold">캐릭터 설명</h2>
+            <p class="font-modu text-muted">개인정보보호 탐험대의 주인공들을 소개합니다!</p>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <!-- 락스타 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="text-center character-card">
+                    <img src="images/Lockstar.png" alt="락스타 캐릭터 이미지" class="character-img">
+                    <div class="font-tntn character-name">지킹별의 락스타 (Lock star)</div>
+                    <p class="font-modu character-desc mt-3">
+                        개인정보 침해로부터 안전할 때 노래하는 캐릭터입니다.<br>
+                        락스타가 사는 곳은 Lock and Roll! 안전한 일상을 즐기는 지킹별.<br>
+                        개인정보 유출 문제를 예방하기 위해 대한민국으로 날아왔습니다.<br><br>
+                        ▶ 키워드: <b>보안</b>, <b>음악</b>, <b>우주</b>, <b>지식 전달자</b>
+                    </p>
+                </div>
+            </div>
+
+            <!-- A양 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="text-center character-card">
+                    <img src="images/A_girl.png" alt="학생 A양 캐릭터 이미지" class="character-img">
+                    <div class="font-tntn character-name">학생 A양</div>
+                    <p class="font-modu character-desc mt-3">
+                        개인정보보호에 대해 궁금한 게 많은 활발한 여학생입니다.<br>
+                        락스타의 이야기에 귀를 기울이며 하나씩 배워가고 있어요.<br>
+                        문제 상황에서도 침착하게 해결 방안을 찾아내는 역할을 합니다.<br><br>
+                        ▶ 키워드: <b>호기심</b>, <b>문제 해결</b>, <b>성장</b>
+                    </p>
+                </div>
+            </div>
+
+            <!-- B군 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="text-center character-card">
+                    <img src="images/B_man.png" alt="학생 B군 캐릭터 이미지" class="character-img">
+                    <div class="font-tntn character-name">학생 B군</div>
+                    <p class="font-modu character-desc mt-3">
+                        처음에는 개인정보보호에 대해 잘 몰랐지만,<br>락스타와 A양과 함께하면서
+                        점점 그 중요성을 깨닫게 됩니다.<br>
+                        실수를 통해 배우는 캐릭터로, 사용자들과의 공감대를 형성합니다.<br><br>
+                        ▶ 키워드: <b>실수</b>, <b>공감</b>, <b>발견</b>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 풋터 시작 -->
+    <footer class="bg-white text-dark">
+        <div class="container text-center">
+            <p class="font-modu py-4 mb-0">Copyright <i class="bi bi-c-circle"></i> 2025 Designed by <a
+                    href="https://cherish02.notion.site/f5a10c77190e462c8aade07034bd3fe5?source=copy_link"
+                    target="_blank" class="link-danger text-decoration-none">Cherish 🍒</a></p>
+        </div>
+    </footer>
+    <!-- 풋터 끝 -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- 네비게이션 공백 자동 계산하여 겹침 방지 -->
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const navbar = document.querySelector(".navbar");
+            const snsSection = document.getElementById("sns-links");
+            if (navbar && snsSection) {
+                const navHeight = navbar.offsetHeight;
+                snsSection.style.marginTop = navHeight + "px";
+            }
+        });
+    </script>
+</body>
+
+</html>
